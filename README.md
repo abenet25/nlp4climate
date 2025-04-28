@@ -19,6 +19,7 @@ nlp4climate/
 │   └── NLP_functions.py # Utility functions for loading data and visualization
 ├── requirements.txt     # Library list with versions
 └── README.md            # This file
+└── LICENSE.txt          # License (MIT) of the project
 ```
 
 ## ▶️ How to run the project
@@ -63,3 +64,7 @@ The app relies on pre-trained models stored in the models/ folder (vectorizer.pk
 
 Ariadna Benet. Project developed as part of a final project during the Data Science Bootcamp by Data Science Institute.
 https://github.com/abenet25/
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
