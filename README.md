@@ -63,3 +63,7 @@ The app relies on pre-trained models stored in the models/ folder (vectorizer.pk
 
 Ariadna Benet. Project developed as part of a final project during the Data Science Bootcamp by Data Science Institute.
 https://github.com/abenet25/
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
