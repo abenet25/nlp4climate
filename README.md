@@ -19,6 +19,7 @@ nlp4climate/
 │   └── NLP_functions.py # Utility functions for loading data and visualization
 ├── requirements.txt     # Library list with versions
 └── README.md            # This file
+└── LICENSE.txt          # License (MIT) of the project
 ```
 
 ## ▶️ How to run the project
