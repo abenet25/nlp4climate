@@ -7,3 +7,5 @@ scikit-learn==1.6.1
 gensim==4.3.3
 pyLDAvis==3.4.1
 wordcloud==1.9.4
+
+python-3.11
