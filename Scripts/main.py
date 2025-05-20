@@ -10,3 +10,5 @@ if lang == "de":
     show_de_content()
 elif lang == "cat":
     show_ca_content()
+
+# Força redeplegament Streamlit
