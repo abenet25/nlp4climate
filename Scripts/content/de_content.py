@@ -121,7 +121,7 @@ def show_project_description():
     und Natural Language Processing“**, durchgeführt im Rahmen des **Data Science Bootcamps** am [Data Science Institute by Fabian Rappert](https://www.data-science-institute.de).
 
     📊 **Datengrundlage**  
-    Das Projekt basiert auf dem Datensatz 👉 [Countries Life Expectancy](https://www.kaggle.com/datasets/amirhosseinmirzaie/countries-life-expectancy) *(Kaggle)*.
+    Das Projekt stützt sich auf den Datensatz 👉 [Countries Life Expectancy](https://www.kaggle.com/datasets/amirhosseinmirzaie/countries-life-expectancy) *(Kaggle)*.
     Auf diesem Datensatz basieren die Analysen mit Business Intelligence und Machine Learning. Es wird untersucht, welche Variablen 
     die Lebenserwartung auf allen Kontinenten am stärksten beeinflussen. Außerdem werden Prognosen darüber erstellt, wie sich die Werte 
     in Abhängigkeit von Veränderungen der verschiedenen Faktoren entwickeln könnten.
@@ -244,7 +244,7 @@ def show_data_methodology():
     with st.expander("🫸 Was sind *Stopwords*?"):
         st.write("""**Stopwörter** sind häufig vorkommende Wörter wie "und", "der" oder "ist", die meist keinen wichtigen Beitrag zum Inhalt eines Textes leisten und deshalb bei der Analyse oft weggelassen werden.
                  \n🔹**Enlisch:** Für jede Sprache werden spezifische Stoppwortlisten verwendet. Dabei handelt es sich meist um Funktionswörter, wie zum Beispiel im Englischen "the", "is", "and" usw.    
-                🔹**Schlüsselwörter:** Spezifische Begriffe, die thematisch zentral, aber zu dominant sind – z.B. "health", "climate change" (Suchwörter) – werden entfernt, um Verzerrung in WordClouds oder LDA-Themen zu vermeiden.    
+                🔹**Schlüsselwörter:** Spezifische Begriffe, die thematisch zentral, aber zu dominant sind – z.B. "health", "climate change" (Suchwörter bei der Textsammlung) – werden entfernt, um Verzerrung in WordClouds oder LDA-Themen zu vermeiden.    
                 🔹**Korpusspezifisch:** Individuelle Liste basierend auf Häufigkeitsanalysen im jeweiligen Korpus – dient dazu, Wörter zu entfernen, die dort zwar oft vorkommen, aber analytisch wenig Mehrwert bieten. 
                  Für das wissenschaftliche Korpus, z.B. "study", "analysis" oder "conclusions".
                   """)
@@ -391,11 +391,11 @@ def show_sentence_classification():
 
     vectorizer, model_lr, model_nb = load_classification_models()
 
-    try:
-        check_is_fitted(vectorizer, "idf_")
-    except NotFittedError:
-        st.error("❌ Der Vektorisierer wurde nicht trainiert. Bitte überprüfe die Datei 'vectorizer.pkl'.")
-        st.stop()
+    #try:
+    #    check_is_fitted(vectorizer, "idf_")
+    #except NotFittedError:
+    #    st.error("❌ DerVektorisierer wurde nicht trainiert. Bitte überprüfe die Datei 'vectorizer.pkl'.")
+    #    st.stop()
         
     # Benutzereingabe
     user_input = st.text_input("✏️ Satz eingeben:")
